@@ -32,8 +32,8 @@ function makeLeave(dip) {
 let modifiedLeave = document.getElementById(`thirdButton`);
 modifiedLeave.addEventListener(`mouseout`, makeLeave); 
 
-//Space Function
-function pressSpace(event){
+//Space Function. Very hard one to figure out. First I had to find the event.which value for the spacebar which was 32
+function pressSpace(event){//then i had to find an argument for my if/else statement that would pop up an alert message if the apace key was triggered
     if(32) {   
         alert(`SPACE BAR WAS DEFINITELY PRESSED`);
     } else {
